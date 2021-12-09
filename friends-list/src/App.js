@@ -18,7 +18,9 @@ const PersonList = () => {
   return (
   <section>
     <Person person={people[0]} />;
-    <Person person={people[1]} />;
+    <Person person={people[1]}> 
+      Mike is UX Designer with 5 years of work experience.
+    </Person>;
     <Person person={people[2]} />
   </section>
   );
@@ -34,6 +36,7 @@ const Person = (props) => {
   <div>
     <h4>{name}</h4>
     <h4>{job}</h4>
+    {children}
   </div>
   </div>
   );
