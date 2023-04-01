@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
-
-// "Layout"  renders a webpage layout with a title, navigation bar, main content, and footer.
+// Renders a webpage layout with a title, navigation bar, main content, and footer.
 
 const Layout = ({ children }) => (
     <>
@@ -18,7 +18,7 @@ const Layout = ({ children }) => (
                 {children}
             </main>
             <footer>
-                Footer
+                <Footer />
             </footer>
         </Box>
     </>
